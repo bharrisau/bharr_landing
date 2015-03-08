@@ -1,6 +1,6 @@
 #!/bin/bash
  
-cat "cloud-config.yaml" <<EOF
+cat > "cloud-config.yaml" <<EOF
 #cloud-config
 
 ssh_authorized_keys:
