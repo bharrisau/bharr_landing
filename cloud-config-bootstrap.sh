@@ -4,8 +4,7 @@ cat > "cloud-config.yaml" <<EOF
 #cloud-config
 
 ssh_authorized_keys:
-  - ecdsa-sha2-nistp521 AAAAE2VjZHNhLXNoYTItbmlzdHA1MjEAAAAIbmlzdHA1MjEAAACFBAE8O61Y80vlNHDYOP1IR8HwnO/ossFhO0nrN/JcAWHL1TiwltfAX8CN025/7rlEO/xmdOhm8Gc4aFVdcRAnCIHBTAFalEcFC5Ggtagd8r0oyQwp/2CM7Q8dB5VF9o426jIG8oXaHrqGhP/6LtGOq338+AqoTjXUD3vGAwscRyg8ujDBvA== ben_ecdsa@bharr.is
-  - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAspjqyo59nl5TbcmY3OUT9R/uqKeptIp34YD3nuOuffWzoQ16gTAM9hdYEddNTrUTpcOzgaxuZekGICBc8lRWK6281KegQztVA2RPu33ENhoCGkzs8gWyWC8XXct5uODwcy0EZLKcE9fKMCicswhb/NNRcftTJ2dFBFyF4x5TPikHTO49pQA9slBfE1MV2Iy0opvFCqhFbw5mTA6lwXAr6LWJO6BD8wCRIJ21GNLFjJ6KSKS7cdfX5SrWexptmohsKYtiX9KmfgG1RMcVlHLXXdKrxduMkePlNc3qDx/OW6MFSyWTSwnJzYtpUcYh0hxKtkP3Lks0SmJ9mdkqlarNww== ben@bharr.is
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBc4sJBOMfEH9IvVih/d/AJ3IUIGEz+aaMAdyMeHgnKu ben@n900x4c
 EOF
  
 sudo coreos-install -d /dev/vda -c cloud-config.yaml
