@@ -8,4 +8,4 @@ ssh_authorized_keys:
 EOF
  
 sudo coreos-install -d /dev/vda -c cloud-config.yaml
-sudo reboot 
+#sudo reboot 
